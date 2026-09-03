@@ -86,6 +86,10 @@ export function useAccount(publicKey: string | null): UseAccountResult {
   // Fetch whenever the connected public key changes (initial connect and
   // switching accounts in the wallet).
   useEffect(() => {
+    // eslint-disable-next-line react-hooks/set-state-in-effect -- this is the
+    // canonical data-fetch-on-change pattern: refresh() must synchronously
+    // flip to the loading state so the skeleton shows the instant the key
+    // changes, then update again once Horizon answers.
     void refresh()
   }, [refresh])
 
