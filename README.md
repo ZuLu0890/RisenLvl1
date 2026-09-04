@@ -85,6 +85,48 @@ Friendbot mints a starting balance of 10,000 testnet XLM instantly.
 balance), use a malformed address (client-side validation), or send to an
 account that doesn't exist yet (network rejection with a friendly message).
 
+## Screenshots
+
+The four states required by the project brief, captured from the running
+app (each file lives in `docs/screenshots/`):
+
+### 1. Wallet connected state
+
+![Wallet connected state](docs/screenshots/wallet-connected.png)
+
+### 2. Balance displayed
+
+![Balance displayed](docs/screenshots/balance-displayed.png)
+
+### 3. Successful testnet transaction
+
+![Successful testnet transaction](docs/screenshots/transaction-success.png)
+
+### 4. Transaction result is shown to the user
+
+![Transaction result shown to the user](docs/screenshots/transaction-result.png)
+
+### How to capture them
+
+Run the app locally (`npm install && npm run dev`), then:
+
+1. **Wallet connected state** — click **Connect wallet** and approve the
+   request in the Freighter popup. Screenshot the card showing the green
+   dot, **Connected**, the **TESTNET** badge and your address.
+2. **Balance displayed** — fund the account with **Fund with Friendbot** if
+   it's new, then screenshot the balance card showing the XLM amount (the
+   balance refreshes automatically after funding).
+3. **Successful testnet transaction** — follow the steps under *Testing the
+   send flow* above. After approving the Freighter popup, screenshot the app
+   showing the green **Payment sent** banner with the transaction hash and
+   the refreshed balance.
+4. **Transaction result shown to the user** — keep the success banner in
+   view (or click **Send another** and send once more) and screenshot the
+   result area showing the transaction hash with the **View on Stellar
+   Expert** link, which proves the result is surfaced to the user.
+
+Save each capture to the file named above so the images render on GitHub.
+
 ## Project structure
 
 ```
