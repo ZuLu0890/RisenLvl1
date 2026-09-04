@@ -96,7 +96,7 @@ app (each file lives in `docs/screenshots/`):
 
 ### 2. Balance displayed
 
-![Balance displayed](docs/screenshots/balance-displayed.png)
+![Balance displayed](docs/screenshots/balance-displayed.jpg)
 
 ### 3. Successful testnet transaction
 
@@ -104,7 +104,7 @@ app (each file lives in `docs/screenshots/`):
 
 ### 4. Transaction result is shown to the user
 
-![Transaction result shown to the user](docs/screenshots/transaction-result.png)
+![Transaction result shown to the user](docs/screenshots/transaction-result.jpg)
 
 ### How to capture them
 
